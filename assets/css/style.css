@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f6f6;
+    font-family: 'Roboto Slab', serif;
+    color: #666;
+}
+
+#logo {
+    margin: 16px 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 30%;
+
+    background-color: white;
+    margin: 16px 16px;
+    padding-bottom: 1.5rem;
+
+    /* border: 1px solid; */
+    border-radius: 10px;
+    line-height: 1.5;
+
+    /* new property */
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    transition: all .2s linear;
+}
+
+.card:hover {
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    transform: translate3D(0, -2px, 0);
+}
+
+h1 {
+    text-align: center;
+    padding: 1.5rem;
+    margin: 0 0 1.5rem 0;
+    background-image: linear-gradient(80deg, #ff3636 0%, #f358ff 100%);
+    font-size: 1.5rem;
+    color: white;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.p-desc {
+    padding: 1rem 1.5rem;
+    text-align: justify;
+}
+
+p {
+    padding-left: 1.5rem;
+}
+
+.card:nth-child(2n) h1 {
+    background-image: linear-gradient(80deg, #ff3636 0%, #00fc30 100%);
+}
+
+.card:nth-child(4n) h1 {
+    background-image: linear-gradient(80deg, #ff3636 0%, #38abd5 100%);
+}
+
+.card:nth-child(5n) h1 {
+    background-image: linear-gradient(80deg, #ff3636 0%, #e4fc22 100%);
+}
+
+@media screen and (min-width: 320px) {
+    img {
+        max-width: 80%;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        flex: 1 1 30%;
+    }
+}
