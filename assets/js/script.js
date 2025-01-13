@@ -28,7 +28,7 @@ container.appendChild(content)
 // function for connect API & get API data
 async function getApi() {
     try {
-        let response = await fetch('http://ghibliapi.herokuapp.com/films')
+        let response = await fetch('https://ghibliapi.vercel.app/films')
         let result = await response.json()
         return result
     } catch (error) {
